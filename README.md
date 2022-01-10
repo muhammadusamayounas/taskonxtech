@@ -1,6 +1,6 @@
 Video Link:
 
-https://drive.google.com/file/d/11Pi4Qf3zVEe4xWC5cS19Ryqk9AbkHgND/view?usp=sharing
+https://drive.google.com/file/d/1PzynYxnMcEAYsgQT5L4mezkWptz-zqhc/view?usp=sharing
 
 .env file
 
@@ -19,6 +19,6 @@ Place .env file in that folder
 
 Place database folder in SQL server or run command php artisan migrate
 
-Note:Vendor folder connt be upload on github reason explained in the video
+Note:Vendor folder connot be upload on github reason explained in the video
 
 

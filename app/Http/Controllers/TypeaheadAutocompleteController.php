@@ -19,8 +19,8 @@ class TypeaheadAutocompleteController extends Controller
 
         $query = $request->get('query');
 
-        $filter_data = User::select('email')
-                        ->where('email','LIKE', '%'.$query.'%')
+        $filter_data = User::select('name')
+                        ->where('name','LIKE', '%'.$query.'%')
                         ->get();
 
         return response()->json($filter_data);
