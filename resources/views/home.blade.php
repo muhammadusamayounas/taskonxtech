@@ -42,7 +42,7 @@
 </div> 
     <br>
     <div class="flex flex-wrap">
-        <a href="/Delete Book">
+        <a href="/updateBook">
         <button type="submit"
         class="w-full select-none font-bold whitespace-no-wrap p-40 align-items-center justify-content-center; rounded-lg text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-9">
             {{ __('Delete Book') }}

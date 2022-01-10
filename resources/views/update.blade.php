@@ -10,6 +10,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .row{
+                justify-content: center;
+                align-items: center;
+              }
+             </style>
     </head>
     <body>
         <div class="container">
@@ -18,9 +24,13 @@
                     <table class="table">
                        <thead class="thead-dark">
                            <tr>
-                              <th scope="col"> Name </th>
+                              <th scope="col"> Book Name </th>
                               <th scope="col"> Author Name </th>
                               <th scope="col"> Image </th>
+                              <th scope="col"> Update </th>
+                              <th scope="col"> Delete </th>
+
+
                            </tr>
                        </thead>
                        <tbody>
@@ -28,11 +38,16 @@
                            <tr>
                               <td>{{$books->bookname}}</td>
                               <td>{{$books->author}}</td>
-                              <td><img src="{{asset('uploads/book/'.$books->image)}}"width="200px;"height="200px;"alt="image"></td>
-                           </tr>
+                              <td><img src="{{asset('uploads/book/'.$books->image)}}"width="150px;"height="150px;"alt="image"></td>
+                              <td><a href="/editbook/{{$books->id}}" class="btn btn-success">Update</a></th>
+                              <td><a href="/deletebook/{{$books->id}}" class="btn btn-danger">Delete</a></th>
+                            </tr>
                            @endforeach
                        </tbody>
                     </table>
+                    <div class="row">
+                        {{$book->links()}}
+                    </div>
                 </div>
         </div>
     </div>

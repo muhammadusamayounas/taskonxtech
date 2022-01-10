@@ -25,7 +25,7 @@
                     <table class="table">
                        <thead class="thead-dark">
                            <tr>
-                              <th scope="col"> Name </th>
+                              <th scope="col" >Book Name </th>
                               <th scope="col"> Author Name </th>
                               <th scope="col"> Image </th>
                            </tr>
@@ -36,7 +36,7 @@
                               <td>{{$books->bookname}}</td>
                               <td>{{$books->author}}</td>
                               <td><img src="{{asset('uploads/book/'.$books->image)}}"width="200px;"height="200px;"alt="image"></td>
-                           </tr>
+                            </tr>
                            @endforeach
                        </tbody>
                     </table>

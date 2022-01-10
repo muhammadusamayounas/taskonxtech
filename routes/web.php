@@ -24,16 +24,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
 Route::get('/typeahead_autocomplete', [TypeaheadAutocompleteController::class, 'index']);
-
 Route::get('/typeahead_autocomplete/action', [TypeaheadAutocompleteController::class, 'action'])->name('typeahead_autocomplete.action');
-
 Route::get('/insertbook', [BookController::class,'index']);
 Route::post('/addbook', [BookController::class,'insert'])->name('addbook');
-
 Route::get('/view', [BookController::class,'display']);
+Route::get('/updateBook', [BookController::class,'updatedisplay']);
+Route::get('/editbook/{id}', [BookController::class,'update']);
+Route::put('/bookupdate/{id}', [BookController::class,'updatebook']);
+Route::get('/deletebook/{id}', [BookController::class,'deletebook']);
 
 ?>
 
