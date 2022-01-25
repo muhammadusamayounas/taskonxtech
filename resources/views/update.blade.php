@@ -29,8 +29,6 @@
                               <th scope="col"> Image </th>
                               <th scope="col"> Update </th>
                               <th scope="col"> Delete </th>
-
-
                            </tr>
                        </thead>
                        <tbody>

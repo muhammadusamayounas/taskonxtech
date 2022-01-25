@@ -17,6 +17,8 @@
     </button>
 </div>
 <br>
+@can('admin')
+    
 <div class="flex flex-wrap">
     <a href="/view">
     <button type="submit"
@@ -48,6 +50,8 @@
             {{ __('Delete Book') }}
         </button>
 </div>
+@endcan
+
 </main>
 @endsection
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\book;
 use Illuminate\Http\Request;
-
+use App\Models\User;
 class HomeController extends Controller
 {
     /**
@@ -24,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        auth()->user()->givePermissionTo('edit articles','admin');
+
         return view('home');
     }
  
